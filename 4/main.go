@@ -19,7 +19,7 @@ func Difference(slice1, slice2 []string) []string {
 		exists[s] = struct{}{}
 	}
 
-	var result []string
+	var result = []string{}
 	for _, s := range slice1 {
 		if _, found := exists[s]; !found {
 			result = append(result, s)
